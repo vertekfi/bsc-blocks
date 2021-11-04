@@ -10,10 +10,10 @@
     "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 blocklytics/ethereum-blocks",
 
     "deploy-rinkeby": "graph deploy subgraph.rinkeby.yaml --studio rinkeby-blocks",
-    "deploy:fantom-eu": "graph deploy fantom-blocks subgraph.fantom.yaml --ipfs http://ec2-18-159-209-6.eu-central-1.compute.amazonaws.com:5001/ --node http://ec2-18-159-209-6.eu-central-1.compute.amazonaws.com:8020/",
-    "deploy:fantom-us": "graph deploy fantom-blocks subgraph.fantom.yaml --ipfs http://ec2-54-177-253-133.us-west-1.compute.amazonaws.com:5001/ --node http://ec2-54-177-253-133.us-west-1.compute.amazonaws.com:8020/",
-    "deploy:fantom-canada": "graph deploy fantom-blocks subgraph.fantom.yaml --ipfs http://ec2-99-79-41-64.ca-central-1.compute.amazonaws.com:5001/ --node http://ec2-99-79-41-64.ca-central-1.compute.amazonaws.comk:8020/",
-    "deploy:fantom-seoul": "graph deploy fantom-blocks subgraph.fantom.yaml --ipfs http://ec2-3-35-233-155.ap-northeast-2.compute.amazonaws.com:5001/ --node http://ec2-3-35-233-155.ap-northeast-2.compute.amazonaws.com:8020/"
+    "deploy:fantom-eu": "graph deploy fantom-blocks subgraph.fantom.yaml --ipfs http://ec2-3-126-251-111.eu-central-1.compute.amazonaws.com:5001/ --node http://ec2-3-126-251-111.eu-central-1.compute.amazonaws.com:8020/",
+    "deploy:fantom-us": "graph deploy fantom-blocks subgraph.fantom.yaml --ipfs http://ec2-54-219-138-209.us-west-1.compute.amazonaws.com:5001/ --node http://ec2-54-219-138-209.us-west-1.compute.amazonaws.com:8020/",
+    "deploy:fantom-canada": "graph deploy fantom-blocks subgraph.fantom.yaml --ipfs  http://ec2-99-79-76-55.ca-central-1.compute.amazonaws.com:5001 --node  http://ec2-99-79-76-55.ca-central-1.compute.amazonaws.com:8020/",
+    "deploy:fantom-seoul": "graph deploy fantom-blocks subgraph.fantom.yaml --ipfs http://ec2-13-125-206-95.ap-northeast-2.compute.amazonaws.com:5001/ --node http://ec2-13-125-206-95.ap-northeast-2.compute.amazonaws.com:8020/"
   },
   "dependencies": {
     "@graphprotocol/graph-cli": "^0.21.1",
