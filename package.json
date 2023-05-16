@@ -5,6 +5,7 @@
     "codegen": "graph codegen subgraph.bsc.yaml",
     "build": "graph build subgraph.bsc.yaml",
     "deploy": "graph deploy vertekfi/bsc-blocks subgraph.bsc.yaml --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/",
+    "deploy:arbitrum": "graph deploy vertekfi/arbitrum-blocks subgraph.arbitrum.yaml --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/",
     "create-local": "graph create --node http://localhost:8020/ blocklytics/ethereum-blocks",
     "remove-local": "graph remove --node http://localhost:8020/ blocklytics/ethereum-blocks",
     "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 blocklytics/ethereum-blocks"

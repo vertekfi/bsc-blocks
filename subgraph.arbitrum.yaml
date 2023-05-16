@@ -1,0 +1,25 @@
+specVersion: 0.0.2
+description: Indexing all Ethereum Block data
+repository: https://github.com/vertekfi/bsc-blocks
+schema:
+  file: ./schema.graphql
+dataSources:
+  - kind: ethereum/contract
+    name: GovernanceToken
+    network: arbitrum-one
+    source:
+      address: "0x412A1ab6A00B50A7ad2306C994ae609Bd823ad87"
+      abi: GovernanceToken
+      startBlock: 76381433
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.4
+      language: wasm/assemblyscript
+      entities:
+        - Token
+      abis:
+        - name: GovernanceToken
+          file: ./abis/GovernanceToken.json
+      blockHandlers:
+        - handler: handleBlock
+      file: ./src/mappings/blocks.ts
